@@ -1,0 +1,57 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" dropdown="">
+                    <img alt="image" class="img-circle" src="{{app.userProfileImageSmall}}" height="48" width="48">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" dropdown-toggle="" href="">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{app.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">My Account<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu m-t-xs">
+                        <li><a ui-sref="app.logout">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    R&uarr;
+                </div>
+
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-user"></i> <span class="nav-label">Profile</span></a>
+            </li> 
+            <!-- <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-bell"></i> <span class="nav-label">Notifications</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-comments"></i> <span class="nav-label">Messages</span></a>
+            </li> -->
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-book"></i> <span class="nav-label">Shelves</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-heart"></i> <span class="nav-label">Wishlist</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-group"></i> <span class="nav-label">Communities</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-gears"></i> <span class="nav-label">Settings</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-question-circle"></i> <span class="nav-label">FAQs</span></a>
+            </li> 
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-bug"></i> <span class="nav-label">Report Bug</span></a>
+            </li>          
+        </ul>
+    </div>
+</nav>
